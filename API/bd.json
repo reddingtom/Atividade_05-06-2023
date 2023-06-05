@@ -1,0 +1,28 @@
+{
+  "games": [
+    {
+      "id": 1,
+      "titulo": "Game ruim",
+      "data": "07-07-2077",
+      "img": "https://pop.proddigital.com.br/wp-content/uploads/sites/8/2021/09/cyberpunk-2077-1-e1631316363662.jpg"
+    },
+    {
+      "id": 2,
+      "titulo": "Game bom",
+      "data": "25-06-2006",
+      "img": "https://sarkariresultraj.in/wp-content/uploads/2023/06/tanggal-rilis-GTA-6.jpg"
+    },
+    {
+      "id": 3,
+      "titulo": "Game furry",
+      "data": "30-07-2023",
+      "img": "https://cdn.akamai.steamstatic.com/steam/apps/553420/header.jpg?t=1649107473"
+    },
+    {
+      "id": 4,
+      "titulo": "Game cellbit",
+      "data": "30-11-2007",
+      "img": "https://pop.proddigital.com.br/wp-content/uploads/sites/8/2021/09/cyberpunk-2077-1-e1631316363662.jpg"
+    }
+  ]
+}
