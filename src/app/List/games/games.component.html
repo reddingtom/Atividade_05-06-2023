@@ -1,12 +1,26 @@
-<div class="container mt-4 mb-4">
-  <h1 class="text-center">Ferramentas Utilizadas</h1>
-  <div class="row">
-      <div class="col-lg-3" *ngFor="let x of games.slice(0,4)">
-          <div class="foodbox">
-              <img src="{{x.img}}">
-              <h1>{{x.titulo}}</h1>
-              <p>{{x.data}}</p>
-          </div>
-      </div>
-  </div>
-</div>
+<h2>Lista de Games</h2>
+<form>
+  <p>Arquivo: <input type="file" name="file" [(ngModel)]="game.img" ></p>
+  <p>Titulo: <input type="text" name="name" [(ngModel)]="game.titulo" /></p>
+  <p>Data: <input type="text" name="date" [(ngModel)]="game.data" /></p>
+  <button type="button" (click)="Cadastrar()">Cadastrar</button>
+</form>
+<hr />
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Imagem</th>
+    <th>Titulo</th>
+    <th>Data</th>
+  </tr>
+  <tr *ngFor="let x of games">
+    <th>{{ x.id }}</th>
+    <th>{{ x.img }}</th>
+    <th>{{ x.titulo }}</th>
+    <th>{{ x.data }}</th>
+    <td>
+      <button (click)="Atualizar(x.id)">Atualizar</button>
+      <button (click)="Excluir(x.id)">Excluir</button>
+    </td>
+  </tr>
+</table>
