@@ -7,7 +7,9 @@ import { ServiceService } from 'src/app/service/service.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  games: Array<any> = new Array();
 
+  constructor(private gameService: ServiceService) {}
 
   ngOnInit(): void {
     this.Listar();
